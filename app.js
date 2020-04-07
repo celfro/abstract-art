@@ -1,20 +1,9 @@
-var a= 1.4, b=-1.1, c=1.8, d=-2.5;
+var a= 3.4, b=-1.1, c=1.8, d=-2.5;
 var x=1, y=1
 var aSlider, bSlider, cSlider, dSlider
 
 function setup() {
-  aSlider = createSlider(-3,3,a,0.01);
-  bSlider = createSlider(-3,3,b,0.01);
-  cSlider = createSlider(-3,3,c,0.01);
-  dSlider = createSlider(-3,3,d,0.01);
-  var myButton = createButton("Redraw");
-  myButton.mousePressed(function(){
-    a =aSlider.value();
-    b =bSlider.value();
-    c =cSlider.value();
-    d =dSlider.value();
-    background(255);
-  })
+
   createCanvas(500,500);
   stroke(20, 20, 150, 100);
 }
