@@ -16,7 +16,7 @@ function setup() {
     background(255);
   })
   createCanvas(500,500);
-  stroke[250,50,20,50];
+  stroke(20, 20, 150, 100);
 }
 
 function draw (){
