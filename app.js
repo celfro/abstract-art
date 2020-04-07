@@ -1,15 +1,15 @@
-var a= 3.4, b=-1.1, c=1.8, d=-2.5;
+var a= 3.4, b=-1.1, c=1.8, d=-2.6;
 var x=1, y=1
 var aSlider, bSlider, cSlider, dSlider
 
 function setup() {
 
   createCanvas(500,500);
-  stroke(20, 20, 150, 100);
+  stroke(242, 89, 74 );
 }
 
 function draw (){
-  for(var i=0; i<1000;i++){
+  for(var i=0; i<500;i++){
     var oldx= x;
     var oldy= y;
     x = sin(a * oldy) - cos(b * oldx);
