@@ -3,8 +3,20 @@ var x=1, y=1
 var aSlider, bSlider, cSlider, dSlider
 
 function setup() {
+  aSlider = createSlider(-3,3,a,0.01);
+  bSlider = createSlider(-3,3,b,0.01);
+  cSlider = createSlider(-3,3,c,0.01);
+  dSlider = createSlider(-3,3,d,0.01);
+  var myButton = createButton("Redraw");
+  myButton.mousePressed(function(){
+    a =aSlider.value();
+    b =bSlider.value();
+    c =cSlider.value();
+    d =dSlider.value();
+    background(255);
+  })
   createCanvas(500,500);
-  stroke[150,50,20,50];
+  stroke[250,50,20,50];
 }
 
 function draw (){
